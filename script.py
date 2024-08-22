@@ -8,7 +8,7 @@ API_URL = 'https://pokeapi.co/api/v2/pokemon/35'
 r = requests.get(API_URL)
 response = r.json()
 
-# Extract basic Pokémon information
+# Fetch basic Pokémon information
 pokemon_basic_info = {
     'name': response['name'],
     'id': response['id'],
@@ -53,7 +53,6 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-# Generate HTML file to display Pokémon information
 html_content = f"""
 <!DOCTYPE html>
 <html>
